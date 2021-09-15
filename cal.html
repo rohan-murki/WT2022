@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+        table{
+            margin:auto;
+            padding: 10px;
+           text-align:center; 
+           
+           width:295px;
+           height:325px;
+           background-color: rgb(121, 106, 106);
+           border-radius: 35px;
+           
+
+        }
+        #result{
+            height: 47px;
+            font-size: large;
+            border-radius: 7px;
+            background-color: rgb(208, 235, 208);
+        }
+        .press{
+            font-size: 16px;
+            padding: 15px 32px;
+            border-radius: 7px;
+            background-color:cornsilk;
+
+
+        }
+        #clear{
+            width:70%;
+            font-size:x-large;
+        }
+       
+    </style>
+    <script>
+        //function that display value
+        function dis(val)
+        {
+            document.getElementById("result").value+=val
+        }
+          
+        //function that evaluates the digit and return result
+        function solve()
+        {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        }
+          
+        //function that clear the display
+        function clr()
+        {
+            document.getElementById("result").value = ""
+        }
+        
+     </script>
+</head>
+<body>
+    <table cellspacing="10px" cellpadding="10px">
+        <caption style="font-size:40px;">Calculator</caption>
+        <br>
+        <tr >
+            <td colspan="4">
+                <input type="text" size="40" id="result" >
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="dis('1')" class="press">
+            </td>
+            <td>
+                <input type="button" value="2" onclick="dis('2')" class="press">
+            </td>
+            <td>
+                <input type="button" value="3" onclick="dis('3')" class="press">
+            </td>
+            <td>
+                <input type="button" value="+" onclick="dis('+')" class="press">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="dis('4')" class="press">
+            </td>
+            <td>
+                <input type="button" value="5" onclick="dis('5')" class="press">
+            </td>
+            <td>
+                <input type="button" value="6" onclick="dis('6')" class="press">
+            </td>
+            <td>
+                <input type="button" value="-" onclick="dis('-')" class="press">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="dis('7')" class="press">
+            </td>
+            <td>
+                <input type="button" value="8" onclick="dis('8')" class="press">
+            </td>
+            <td>
+                <input type="button" value="9" onclick="dis('9')" class="press">
+            </td>
+            <td>
+                <input type="button" value="/" onclick="dis('/')" class="press">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="%" onclick="dis('%')" class="press">
+            </td>
+            <td>
+                <input type="button" value="0" onclick="dis('0')" class="press">
+            </td>
+            <td>
+                <input type="button" value="*" onclick="dis('*')" class="press">
+            </td>
+            <td>
+                <input type="button" value="=" onclick="solve()" class="press">
+            </td>
+        </tr>
+        <tr >
+            <td colspan="4"><input type="reset" value="Clear" id="clear" onclick="clr()" class="press" ></td>
+        </tr>
+    </table>
+</body>
+</html>
