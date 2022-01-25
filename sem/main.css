@@ -1,0 +1,17 @@
+body{
+    background-color: lightgrey;
+}
+#contain{
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 500px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 25%;
+    border-radius: 2px;
+    border: solid gray 2px;
+}
+h1{
+    margin-top:0px;
+    margin-bottom: 20px;
+}

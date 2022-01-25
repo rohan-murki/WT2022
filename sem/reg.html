@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</head>
+<body style="background-color: cyan;">
+<h1 align="center">REGISTRATION FORM</h1>
+<form name="registration" method="post" action="reg.php" >
+    <table align="center" cellpadding="15" cell spacing="20">
+        <tr>
+            <td>FIRST NAME</td>
+            <td><input type="text" id="lb_fname" name="fname" size="60" placeholder="enter your first name" required><label id="lb_fname"></label></td>
+        </tr>
+        <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" id="lb_lname" name="lname" size="60" placeholder="enter your last name" required><label id="lb_lname"></label></td>
+        </tr>
+        <tr>
+            <td>USERNAME</td>
+            <td><input type="text" id="lb_uname" name="name" size="60" placeholder="enter your username" required><label id="lb_uname"></label></td>
+        </tr>
+        <tr>
+            <td>PASSWORD</td>
+            <td><input type="password" id="lb_pwd" name="pwd" size="60" placeholder="enter your password" required><label id="lb_pwd"></label></td>
+        </tr>
+        <tr>
+            <td>DATE OF BIRTH</td>
+            <td><input type="date" id="lb_dob" name="dob"><label id="lb_dob" required></label></td>
+        </tr>
+        <tr>
+            <td>EMAIL</td>
+            <td><input type="email" id="lb_mailid" name="mailid" size="60" placeholder="enter your email" required><label id="lb_mailid"></label></td>
+        </tr>
+        <tr>
+            <td>MOBILE NUMBER</td>
+            <td><input type="text" id="lb_mob" name="mob" placeholder="enter your mobile number" size="60" required><label id="lb_mob"></label>&nbsp;(10 digit number)</td>
+        </tr>
+        <tr>
+            <td>LANGUAGE KNOWN</td>
+            <td><input type="checkbox"  name="english" value="english" >
+            <label id="english">ENGLISH</label>
+            <input type="checkbox" name="hindi" value="hindi" >
+            <label id="hindi">HINDI</label>
+        </td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td>Male<input type="radio" id="lb_gender" name="gender" value="male" required>
+            Female<input type="radio" id="lb_gender" name="gender" value="female" required></td>
+            <label id="lb_gender"></label>
+        </tr>
+        <tr>
+            <td>ADDRESS</td>
+            <td><textarea rows="3" cols="57" id="lb_address" name="address" placeholder="enter your address" required></textarea></td>
+            <label id="lb_address"></label>
+        </tr>
+        <tr>
+            <td>CITY</td>
+            <td><input type="text" id="city" name="city" size="60" placeholder="enter your city" required><label id="city"></label></td>
+        </tr>
+        <tr>
+            <td>PIN CODE</td>
+            <td><input type="text" id="pin" name="pin" size="60" placeholder="enter your pincode" required><label id="pin"></label></td> 
+        </tr>
+        <tr>
+            <td>COUNTRY</td>
+            <td><input type="text"  name="country" size="60" value="India"  readonly="readonly" required><label id="country"></label></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Register">
+            </td>
+            
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>

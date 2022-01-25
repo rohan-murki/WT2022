@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contain">
+        <h1>Login</h1>
+        <form name="myform" method="post" action="login.php" onsubmit="return validate()">
+            <label for="name">Username:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Username">
+            <br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+            <br><br>
+            <input type="submit" value="submit">
+            <hr>
+            <p>Not having an account? <a href="reg.html">Register</a></p>
+        </form>
+    </div>
+    <script>
+        function validate(){
+            var n = document.myform.name.value;
+            var p = document.myform.pwd.value;
+            if(n.length==""||p.length==""){
+                alert("Don't submit empty details");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
